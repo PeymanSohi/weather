@@ -2,14 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Weather app using React and Visual Crossing API" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="description" content="A beautiful weather app made with React and Docker" />
     <title>Weather App</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+
+    <!-- Fonts & Styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Global Reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      #root {
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffffcc;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      input,
+      button {
+        font-family: inherit;
+        font-size: 1rem;
+      }
+
+      input {
+        width: 70%;
+        padding: 0.6rem 1rem;
+        margin-right: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+      }
+
+      button {
+        background-color: #3f51b5;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #303f9f;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-top: 1rem;
+      }
+
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      h3, h4 {
+        margin-top: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>
